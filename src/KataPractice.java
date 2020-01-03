@@ -1,6 +1,6 @@
 public class KataPractice {
-    public String getInput(Integer inputValue) {
-        /* comment */
-        return inputValue.toString();
+    public String getInput(Integer inputStartTime, Integer inputEndTime, String inputFamily) {
+        //comment
+        return "0";
     }
 }

@@ -4,8 +4,8 @@ import static junit.framework.TestCase.assertEquals;
 
 public class KataPracticeTest {
     @Test
-    public void returnPassedValue() {
+    public void returnNumericValue() {
         KataPractice kataPractice = new KataPractice();
-        assertEquals("1", kataPractice.getInput(1));
+        assertEquals("0", kataPractice.getInput(0,0, "A" ));
     }
 }
