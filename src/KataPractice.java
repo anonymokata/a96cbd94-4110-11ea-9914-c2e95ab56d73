@@ -9,7 +9,9 @@ public class KataPractice {
                     if (startTimeInt <= 400) startTimeInt = startTimeInt + 2400;
                     if (endTimeInt <= 400) endTimeInt = endTimeInt + 2400;
                     if (startTimeInt < endTimeInt) {
-                        // remaining logic
+                        if (inputFamily.equals("A") || inputFamily.equals("B") || inputFamily.equals("C")) {
+                            // remaining logic
+                        } else payStr = "-1";
                     } else payStr = "-1";
                 } else payStr = "-1";
             } else payStr = "-1";

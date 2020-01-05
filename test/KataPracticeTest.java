@@ -44,6 +44,11 @@ public class KataPracticeTest {
     }
 
     // Test to check that inputFamily == A, B, or C;  return -1 if invalid
+    @Test
+    public void returnErrorInvalidFamily() {
+        KataPractice kataPractice = new KataPractice();
+        assertEquals("-1", kataPractice.getInput("1800","2300","D"));
+    }
 
     // Check various input combinations and validate results
 }
