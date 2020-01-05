@@ -51,4 +51,12 @@ public class KataPracticeTest {
     }
 
     // Check various input combinations and validate results
+    @Test
+    public void returnPayFamilyA() {
+        KataPractice kataPractice = new KataPractice();
+        assertEquals("75", kataPractice.getInput("1700","2200","A"));
+        assertEquals("80", kataPractice.getInput("2300","300","A"));
+        assertEquals("80", kataPractice.getInput("1900","2400","A"));
+        assertEquals("60", kataPractice.getInput("1700","2130","A"));
+    }
 }
