@@ -59,4 +59,24 @@ public class KataPracticeTest {
         assertEquals("80", kataPractice.getInput("1900","2400","A"));
         assertEquals("60", kataPractice.getInput("1700","2130","A"));
     }
+
+    @Test
+    public void returnPayFamilyB() {
+        KataPractice kataPractice = new KataPractice();
+        assertEquals("36", kataPractice.getInput("1700","2000","B"));
+        assertEquals("68", kataPractice.getInput("1700","2300","B"));
+        assertEquals("124", kataPractice.getInput("1700","300","B"));
+        assertEquals("32", kataPractice.getInput("100","300","B"));
+        assertEquals("56", kataPractice.getInput("2300","300","B"));
+        assertEquals("16", kataPractice.getInput("2200","2400","B"));
+    }
+
+    @Test
+    public void returnPayFamilyC() {
+        KataPractice kataPractice = new KataPractice();
+        assertEquals("63", kataPractice.getInput("1700","2000","C"));
+        assertEquals("60", kataPractice.getInput("2300","300","C"));
+        assertEquals("87", kataPractice.getInput("1900","2400","C"));
+        assertEquals("84", kataPractice.getInput("1700","2130","C"));
+    }
 }

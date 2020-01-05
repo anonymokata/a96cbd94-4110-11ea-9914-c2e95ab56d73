@@ -25,8 +25,37 @@ public class KataPractice {
                                 payStr = Integer.toString(payInt);
                                 break;
                             case "B":
+                                if (startTimeInt < 2200) {
+                                    if (endTimeInt < 2200) {
+                                        payInt = (endTimeInt - startTimeInt)/100 * 12;
+                                    } else if (endTimeInt <= 2400) {
+                                        payInt = ((2200 - startTimeInt)/100 * 12) + ((endTimeInt - 2200)/100 * 8);
+                                    } else {
+                                        payInt = ((2200 - startTimeInt)/100 * 12) + 16 + ((endTimeInt - 2400)/100 * 16);
+                                    }
+                                } else if (startTimeInt <= 2400) {
+                                    if (endTimeInt <= 2400) {
+                                        payInt = (endTimeInt - startTimeInt)/100 * 8;
+                                    } else {
+                                        payInt = ((2400 - startTimeInt)/100 * 8) + ((endTimeInt - 2400)/100 * 16);
+                                    }
+                                } else {
+                                    payInt = (endTimeInt - startTimeInt)/100 * 16;
+                                }
+                                payStr = Integer.toString(payInt);
                                 break;
                             case "C":
+                                if (startTimeInt < 2100) {
+                                    if (endTimeInt < 2100 ) {
+                                        payInt = (endTimeInt - startTimeInt)/100 * 21;
+                                    }
+                                    else {
+                                        payInt = ((2100 - startTimeInt)/100 * 21) + ((endTimeInt - 2100)/100 * 15);
+                                    }
+                                } else {
+                                    payInt = (endTimeInt - startTimeInt)/100 * 15;
+                                }
+                                payStr = Integer.toString(payInt);
                                 break;
                             default:
                                 payStr = "-1";
