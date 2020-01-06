@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class BabysitterPay {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a start time (military time - ex. 5pm = 1700): ");

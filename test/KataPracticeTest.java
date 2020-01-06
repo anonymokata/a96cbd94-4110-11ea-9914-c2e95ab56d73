@@ -26,28 +26,28 @@ public class KataPracticeTest {
     @Test
     public void returnErrorBadStartTime() {
         KataPractice kataPractice = new KataPractice();
-        assertEquals("-1", kataPractice.getInput("1600", "2200", "A"));
+        assertEquals("Start Time must be between 1700 and 0400", kataPractice.getInput("1600", "2200", "A"));
     }
 
     // Test to check that inputEndTime is integer, is between 1700 and 2359, or between 0000 and 0400;  return -1 if invalid
     @Test
     public void returnErrorBadEndTime() {
         KataPractice kataPractice = new KataPractice();
-        assertEquals( "-1", kataPractice.getInput("1700","2500","A"));
+        assertEquals( "End Time must be between 1700 and 0400", kataPractice.getInput("1700","2500","A"));
     }
 
     // Test to check that inputStartTime is before inputEndTime;  return -1 if invalid
     @Test
     public void returnErrorTimeRangeReversed() {
         KataPractice kataPractice = new KataPractice();
-        assertEquals("-1", kataPractice.getInput("2300","1800","A"));
+        assertEquals("Start Time must be before End Time", kataPractice.getInput("2300","1800","A"));
     }
 
     // Test to check that inputFamily == A, B, or C;  return -1 if invalid
     @Test
     public void returnErrorInvalidFamily() {
         KataPractice kataPractice = new KataPractice();
-        assertEquals("-1", kataPractice.getInput("1800","2300","D"));
+        assertEquals("Family must be A, B, or C", kataPractice.getInput("1800","2300","D"));
     }
 
     // Check various input combinations and validate results
