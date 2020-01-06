@@ -9,7 +9,6 @@ public class KataPracticeTest {
     @Test
     public void returnNumericValue() {
         KataPractice kataPractice = new KataPractice();
-        // assertEquals("0", kataPractice.getInput(0,0, "A" ));
         assertTrue(KataPractice.isInteger(kataPractice.getInput("1700","2200", "A" )));
     }
 
